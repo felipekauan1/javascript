@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Velocidade: <input type="number" id="txt1">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function calcular() {
+            var num = window.document.getElementById('txt1')
+            var res = window.document.querySelector('div#res')
+            var num1 = Number(num.value)
+            res.innerHTML = `<p>Sua velocidade atual é de ${num1} km/h</p>`
+            if (num1 > 60) {
+                res.innerHTML += `<p>Você está acima da velocidade!</p>`
+            } else {
+                res.innerHTML += `<p>Você está dentro da velocidade ideal!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

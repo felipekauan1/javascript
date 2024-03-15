@@ -1,0 +1,1 @@
+console.log('Funcionou a Extensão!')
