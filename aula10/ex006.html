@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#ara {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #434343;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="ara" class="ara">
+        Interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById('ara')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseover', entrar)
+
+        function clicar() {
+            a.innerHTML = 'Clicou!'
+            a.style.background = '#c2c2c2'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = '#c2c2c2'
+        }
+    </script>
+</body>
+</html>
