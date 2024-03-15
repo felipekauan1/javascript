@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros Passos com DOM</title>
+  </head>
+  <body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <p id="p1">Aqui vai o resultado</p>
+    <p>Aprendendo usar o <strong>DOM</strong> em Javascript.</p>
+    <div>Clique em min</div>
+    <script>
+        var valor = window.document.getElementById('p1')
+        window.document.write(valor.innerHTML)
+        valor.style.backgroundColor = '#c2c2c2'
+    </script>
+  </body>
+</html>
